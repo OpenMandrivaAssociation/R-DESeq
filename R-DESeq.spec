@@ -11,14 +11,16 @@ License:          GPL (>= 3)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
 Requires:         R-Biobase R-locfit 
-Requires:         R-genefilter R-geneplotter R-methods R-MASS 
-%if %{without bootstrap}
-Requires:         R-pasilla 
+%if %{with bootstrap}
+Requires:         R-genefilter R-methods R-MASS
+%else
+Requires:         R-genefilter R-geneplotter R-methods R-MASS R-pasilla
 %endif
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-Biobase R-locfit
-BuildRequires:    R-genefilter R-geneplotter R-methods R-MASS 
-%if %{without bootstrap}
-BuildRequires:    R-pasilla 
+%if %{with bootstrap}
+BuildRequires:    R-genefilter R-methods R-MASS
+%else
+BuildRequires:    R-genefilter R-geneplotter R-methods R-MASS R-pasilla
 %endif
 
 %description
