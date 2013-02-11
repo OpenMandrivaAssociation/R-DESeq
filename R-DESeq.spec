@@ -5,7 +5,7 @@
 Name:             R-%{packname}
 Version:          1.6.1
 Release:          2
-Summary:          Differential gene expression analysis based on the negative binomial distribution
+Summary:          Differential gene expression analysis based on negative binomial distribution
 Group:            Sciences/Mathematics
 License:          GPL (>= 3)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
