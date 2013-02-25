@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.6.1
-Release:          2
+Version:          1.10.1
+Release:          1
 Summary:          Differential gene expression analysis based on negative binomial distribution
 Group:            Sciences/Mathematics
 License:          GPL (>= 3)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/DESeq_1.10.1.tar.gz
 Requires:         R-Biobase R-locfit R-genefilter R-geneplotter
 Requires:         R-methods R-MASS
 %if %{without bootstrap}
@@ -56,3 +56,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/extra
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+%{rlibdir}/%{packname}/scripts
