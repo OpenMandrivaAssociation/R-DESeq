@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          1.10.1
-Release:          1
+Release:          2
 Summary:          Differential gene expression analysis based on negative binomial distribution
 Group:            Sciences/Mathematics
 License:          GPL (>= 3)
