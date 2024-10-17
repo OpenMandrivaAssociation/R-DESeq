@@ -8,7 +8,7 @@ Release:          2
 Summary:          Differential gene expression analysis based on negative binomial distribution
 Group:            Sciences/Mathematics
 License:          GPL (>= 3)
-URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
+URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/DESeq_1.10.1.tar.gz
 Requires:         R-Biobase R-locfit R-genefilter R-geneplotter
 Requires:         R-methods R-MASS
